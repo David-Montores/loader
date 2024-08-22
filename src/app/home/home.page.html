@@ -1,20 +1,16 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Bienvenido</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="ion-text-center ion-padding">
+    <h2>Bienvenido al Loader</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis justo sapien, pellentesque congue dolor sodales vel. </p>
   </div>
+  
+  <ion-button (click)="startLoading()">Continuar</ion-button>
 </ion-content>
+
+<app-custom-loader [isLoading]="isLoading" configType="A" [customConfig]="{loaderColor: 'white'}"></app-custom-loader>

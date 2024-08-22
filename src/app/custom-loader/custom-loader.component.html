@@ -1,0 +1,9 @@
+  <div *ngIf="isLoading" class="loader-overlay">
+    <img *ngIf="config.images && config.images.length" [src]="currentImage" alt="Loader Image" class="loader-image" />
+    <div class="loader-content">
+      <ion-spinner [name]="config.loaderType" [color]="config.loaderColor"></ion-spinner>
+      <p class="loader-text" [style.color]="config.descriptionColor">
+        {{ config.description }}
+      </p>
+    </div>
+  </div>
